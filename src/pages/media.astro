@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Aktuality — WW-CB">
+  <h2 class="section-title">Aktuality</h2>
+  <div id="list" class="article-list"></div>
+  <div id="noitems" class="empty" style="display:none">Žádné články.</div>
+</Layout>
+
+<script is:inline>
+// Mark page for JS
+document.body.setAttribute('data-page', 'media');
+</script>

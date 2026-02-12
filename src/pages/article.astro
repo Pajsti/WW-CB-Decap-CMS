@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Článek — WW-CB">
+  <a href="/media" class="back" style="display:inline-block;margin-bottom:12px;color:var(--muted);text-decoration:none;font-weight:600">← Zpět na aktuality</a>
+  <div id="article" class="article card">
+    <h1 id="title">Načítám...</h1>
+    <div class="meta muted" id="meta">—</div>
+    <div class="content" id="content">Prosím čekej...</div>
+    
+    <!-- Gallery pod contentem -->
+    <div id="gallery" class="article-gallery" style="display:none;">
+      <div class="gallery-nav">
+        <button id="prevImg" class="gallery-btn">‹</button>
+        <div class="gallery-main">
+          <img id="galleryImg" src="" alt="">
+        </div>
+        <button id="nextImg" class="gallery-btn">›</button>
+      </div>
+      <div class="gallery-counter" id="counter">1 / 1</div>
+    </div>
+  </div>
+
+  <!-- Fullscreen modal -->
+  <div id="fullscreenModal" class="fullscreen-modal" style="display:none;">
+    <button id="closeModal" class="modal-close">×</button>
+    <button id="prevModal" class="modal-nav modal-prev">‹</button>
+    <img id="modalImg" src="" alt="">
+    <button id="nextModal" class="modal-nav modal-next">›</button>
+  </div>
+</Layout>
+
+<script is:inline>
+document.body.setAttribute('data-page', 'article');
+</script>
