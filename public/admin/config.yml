@@ -25,9 +25,9 @@ collections:
               - { label: "Název", name: "title", widget: "string" }
               - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
               - { label: "Náhledový obrázek", name: "image", widget: "image" }
-              - { label: "Galerie fotek", name: "images", widget: "list", field: { label: "Fotka", name: "photo", widget: "image" } }
+              - { label: "Galerie fotek", name: "images", widget: "list", field: { label: "Fotka", name: "image", widget: "image" } }
               - { label: "Krátký popis", name: "excerpt", widget: "string" }
-              - { label: "Obsah", name: "content", widget: "markdown" }
+              - { label: "Obsah", name: "content", widget: "text" }
 
   # Fotogalerie - ukládá se do public/data/gallery.json
   - name: "gallery"
@@ -45,4 +45,4 @@ collections:
               - { label: "ID", name: "id", widget: "string" }
               - { label: "Název", name: "title", widget: "string" }
               - { label: "Náhledový obrázek", name: "cover", widget: "image" }
-              - { label: "Fotky", name: "photos", widget: "list", field: { label: "Fotka", name: "photo", widget: "image" } }
+              - { label: "Fotky", name: "photos", widget: "list", field: { label: "Fotka", name: "image", widget: "image" } }
